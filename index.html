@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_05a92ba5b808a80846a7081185de74d2 {
+                #map_9914d5f6a15f3d3d08d08cc4affb1771 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -39,48 +39,62 @@
 <body>
     
     
-            <div class="folium-map" id="map_05a92ba5b808a80846a7081185de74d2" ></div>
+            <div class="folium-map" id="map_9914d5f6a15f3d3d08d08cc4affb1771" ></div>
         
+    
+            
+<div style="position: fixed; top: 90px; left: 10px; z-index: 9999;">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAB6ElEQVR4nO2aMQ6CQBBFv4V2BE7Q
+BbhDW8Qbe4Dd4AW6QtjK25AwthT5ERERCN/Jf3tJe98MAz8AJGchAQQRz5mTTZD0mQ8XkA7BLgDI
+AcgFyD/14q7rloGu6xz6eFkYgmvwtwDSALoBnAahzWmTc2iqqXmyH5hJbJo0M4duWByvFNE0T3Ejy
+MJvNVsklS+AzYAp9oL/8oUBovIErBNO4HcwJ9/hxud7oEXu5WGMpmI5s2MWpRtqAKOp+T7xuAnrWD
+Xz2F5H6j0kAcXf6cVq9FRGIdJf6wSMDnA3OtyzjSpYAGn8AxYAt+gRO+v1t54LdfCJw2yDbeOTWH7
+Nn+Zz0TxSz65yGZbvETRD01lU6VSAqkY7FOI7YxgXnG8BxqxjVN4HK4fjoAjP0a/CVjA4rbCgljqV
+9H9qIQfkb8x7qFOp92hGvwl6V9lF9xM2byve+6RerB9MD+Vo1Yvq7TITAAAAAElFTkSuQmCC" style="width:50px;">
+</div>
+
+            
 </body>
 <script>
     
     
-            var map_05a92ba5b808a80846a7081185de74d2 = L.map(
-                "map_05a92ba5b808a80846a7081185de74d2",
+            var map_9914d5f6a15f3d3d08d08cc4affb1771 = L.map(
+                "map_9914d5f6a15f3d3d08d08cc4affb1771",
                 {
-                    center: [47.49664875, -120.6316325],
+                    center: [47.5, -120.65],
                     crs: L.CRS.EPSG3857,
                     zoom: 10,
                     zoomControl: true,
                     preferCanvas: false,
                 }
             );
+            L.control.scale().addTo(map_9914d5f6a15f3d3d08d08cc4affb1771);
 
             
 
         
     
-            var tile_layer_1299a63603554b4cefaa77f0c8c8623d = L.tileLayer(
+            var tile_layer_ea1f0e7523f1f2ffac71580257bc63f9 = L.tileLayer(
                 "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png",
-                {"attribution": "Map data: \u00a9 OpenStreetMap contributors, SRTM | Map style: \u00a9 OpenTopoMap (CC-BY-SA)", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_05a92ba5b808a80846a7081185de74d2);
+                {"attribution": "\u0026copy; OpenTopoMap (CC-BY-SA)", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_9914d5f6a15f3d3d08d08cc4affb1771);
         
     
-            var heat_map_fd8ad03f9b150bdb1fe09871b3b2c126 = L.heatLayer(
+            var heat_map_a738222d9a66a50007e2efdc614d35bd = L.heatLayer(
                 [[47.55876, -120.6424], [47.54535, -120.6734], [47.54233, -120.64419], [47.54025, -120.65267], [47.55518, -120.64288], [47.54472, -120.66269], [47.55811, -120.62889], [47.55964, -120.6445], [47.54098, -120.65703], [47.57632, -120.68324], [47.40401, -120.6334], [47.5275, -120.82081], [47.31604, -120.42346], [47.32562, -120.52313], [47.31314, -120.50853], [47.53843, -120.6649]],
-                {"blur": 15, "maxZoom": 18, "minOpacity": 0.5, "radius": 25}
-            ).addTo(map_05a92ba5b808a80846a7081185de74d2);
+                {"blur": 15, "maxZoom": 18, "minOpacity": 0.3, "radius": 30}
+            ).addTo(map_9914d5f6a15f3d3d08d08cc4affb1771);
         
     
-                var lat_lng_popup_d47381560823cda9165aba6c5ed7beb4 = L.popup();
+                var lat_lng_popup_d85d48fff19b42f40795510fe187134c = L.popup();
                 function latLngPop(e) {
-                    lat_lng_popup_d47381560823cda9165aba6c5ed7beb4
+                    lat_lng_popup_d85d48fff19b42f40795510fe187134c
                         .setLatLng(e.latlng)
                         .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
                                     "<br>Longitude: " + e.latlng.lng.toFixed(4))
-                        .openOn(map_05a92ba5b808a80846a7081185de74d2);
+                        .openOn(map_9914d5f6a15f3d3d08d08cc4affb1771);
                     }
-                map_05a92ba5b808a80846a7081185de74d2.on('click', latLngPop);
+                map_9914d5f6a15f3d3d08d08cc4affb1771.on('click', latLngPop);
             
 </script>
 </html>
